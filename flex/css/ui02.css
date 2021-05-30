@@ -1,0 +1,30 @@
+/* menu */
+.menu {
+    display: flex;
+}
+.menu-item {
+    width: 25%;
+    background-color: gold;
+    transition: 0.5s;
+}
+.menu-item:hover {
+    background: crimson;
+    width: 35%;
+}
+.menu-link {
+    /* 모든 범위가 마우스 오버가 됨 */
+    display: block;
+    /* 현재 내 폰트 사이즈 만큼 패딩을 준다 */
+    padding: 1em;
+    /* 폰트 사이즈는 html태그 루트요소를 사용하겠다 html사용 폰트의 1.2배를 사용하겠다 */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+}
+.menu-link:hover {
+    color: white;
+}
+
+/* mopdal */

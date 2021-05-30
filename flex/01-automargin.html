@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            width: 600px;
+            height: 500px;
+            /* 남아있는 마진을 전부써서 가운데로 옮긴것 */
+            /* margin: 0 auto; */
+            /* 남아있는 왼쪽 마진을 전부써서 오른쪽으로 다 옮긴다 */
+            margin-left: auto;
+            
+        }
+        .flex-item {
+            width: 150px;
+        }
+        /* margin-auto 남아있는 공간을 전부 사용한다 */
+        .flex-item:last-child {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+    </div>
+</body>
+</html>
