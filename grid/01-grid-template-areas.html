@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            /* 해당하는 셀 만큼 차지하는것 그래서 헤더가 세번 반복됨 */
+            grid-template-areas: 
+                     "header header header"
+                     "a       main    b  "
+                     "footer footer footer";
+            gap: 10px;
+            grid-template-columns: 1fr 2fr 1fr;
+            
+        }
+        .header {
+            grid-area: header;
+        }
+        .sidebar-a {
+            grid-area: a;
+        }
+        .main {
+            grid-area: main;
+        }
+        .sidebar-b {
+            grid-area: b;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header grid-item">HEADER</div>
+        <div class="sidebar-a grid-item">SIDE A</div>
+        <div class="main grid-item">MAIN</div>
+        <div class="sidebar-b grid-item">SIDE B</div>
+        <div class="footer grid-item">FOOTER</div>
+    </div>
+</body>
+</html>
