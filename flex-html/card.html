@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        /* 스마트폰 */
+        .flex-container {
+            display: block;
+            padding: 20px;
+        }
+
+        .flex-item {
+            height: auto;
+            padding: 20px;
+            flex-shrink: 0;
+
+        }
+
+        .flex-img {
+            background-image: url("noimage2.png");
+            width: 270px;
+            height: 180px;
+            justify-content: center;
+            margin: auto;
+        }
+
+        /* 태블릿 */
+        @media (min-width:651px) and (max-width:1280px) {
+            .flex-container {
+                display: flex;
+                /* wrap 꼭 붙여야함 */
+                flex-wrap: wrap;
+            }
+
+            .flex-item {
+                width: 50%;
+            }
+        }
+
+        /* 데스크탑 */
+        @media (min-width:1281px) {
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .flex-item {
+                width: 33.3%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 수 만큼 줄어들고 수만큼 늘어난다 -->
+    <!-- wrap설정과 flex display 설정  -->
+    <!-- 혹은 크기별로 미디어쿼리 + 플렉스 설정 모바일부터 1개 / 태블릿 2개(width 50) / 데스크톱 3개(width33.3) -->
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="flex-footer">header1</div>
+            <div class="flex-content">
+                <div class="flex-img"></div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-footer">header2</div>
+            <div class="flex-content">
+                <div class="flex-img"></div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-footer">header3</div>
+            <div class="flex-content">
+                <div class="flex-img"></div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-footer">header4</div>
+            <div class="flex-content">
+                <div class="flex-img"></div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-footer">header5</div>
+            <div class="flex-content">
+                <div class="flex-img"></div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-footer">header6</div>
+            <div class="flex-content">
+                <div class="flex-img"></div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-content">
+                <div class="flex-img"></div>
+                <div class="flex-footer">header7</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-content">
+                <div class="flex-img"></div>
+
+                <div class="flex-footer">header8</div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-content">
+                <div class="flex-img"></div>
+
+                <div class="flex-footer">header9</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
